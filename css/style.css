@@ -29,7 +29,7 @@
 main{
     width: calc(100% - (var(--font)* 4));
     min-height: calc(100vh - (var(--font) * 4));
-    background-color: var(--cn2);
+    background-color: var(--cn1);
     display: flex;
     justify-content: center;
     padding: calc(var(--font) * 2);
@@ -38,7 +38,9 @@ main{
 article{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     border-radius: calc(var(--font) * 0.3);
+    box-shadow: 1px 1px 1rem 0rem gray;
    
     
 
@@ -46,7 +48,7 @@ article{
 }
 
 article section{
-    width: 320px;
+    width: calc(320px - (var(--font)  * 4));
     padding: calc(var(--font) * 2);
     
 
@@ -55,7 +57,7 @@ article section{
 
 /********apenas configurar cores******/
 article section:nth-of-type(1){
-    background-color: var(--cn1);
+    background-color: white;
 
 }
 article section:nth-of-type(1) > h1{
